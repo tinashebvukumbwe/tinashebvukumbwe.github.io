@@ -79,26 +79,29 @@
             <div class="space"></div>
             <div id="sendmessage">Your message has been sent. Thank you!</div>
             <div id="errormessage"></div>
-            <form name="contactform" action="send_form_email.php" method="post" class="contactForm">
-              <div class="form-group">
-                <label for="last_name">Name</label> <input type="text" name="last_name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
+
+
+            <form action="https://formspree.io/rochietech1@gmail.com" method="POST" class="contactform">
+     
+
+<div class="form-group">
+                <input type="text" name="name" class="form-control br-radius-zero" id="name" placeholder="Your Name" data-rule="minlen:4" data-msg="Please enter at least 4 chars" />
                 <div class="validation"></div>
               </div>
               <div class="form-group">
-                <label for="email">Email</label><input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
+                <input type="email" class="form-control br-radius-zero" name="email" id="email" placeholder="Your Email" data-rule="email" data-msg="Please enter a valid email" />
                 <div class="validation"></div>
               </div>
-              <div class="form-group">
-                <label for="telephone">Subject</label><input type="text" class="form-control br-radius-zero"  name="telephone" id="subject" placeholder="Subject" data-rule="minlen:4" data-msg="Please enter at least 8 chars of subject" />
-                <div class="validation"></div>
+              
               </div>
               <div class="form-group">
-                 <label for="comments">Message</label><textarea class="form-control br-radius-zero" name="comments"  rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
+                <textarea class="form-control br-radius-zero" name="message" rows="5" data-rule="required" data-msg="Please write something for us" placeholder="Message"></textarea>
                 <div class="validation"></div>
               </div>
 
               <div class="form-action">
-                 <input type="submit" class="btn btn-form" value="Send">
+                
+		<input type="submit" value="Send" class="btn btn-form">
               </div>
             </form>
           </div>
